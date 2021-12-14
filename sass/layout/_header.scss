@@ -1,0 +1,12 @@
+.header{
+    @include clearfix;
+
+    .logo{
+        float: left;
+    }
+    
+    .radio{
+        float: right;
+    }
+}
+

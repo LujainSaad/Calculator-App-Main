@@ -1,0 +1,21 @@
+.calculator {
+  &-screen {
+    width: 100%;
+    height: 9rem;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: $very_dark_desaturated_blue3;
+    border: none;
+    border-radius: 0.7rem;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+    &[type="text"] {
+      font-size: 4rem;
+      text-align: right;
+      color: white;
+    }
+  }
+}

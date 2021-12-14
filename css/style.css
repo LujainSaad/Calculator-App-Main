@@ -1,0 +1,201 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden; }
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #3a4764;
+  font-family: 'Spartan', sans-serif; }
+  body #white:checked {
+    background-color: white; }
+
+.calculator-app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44rem; }
+
+.calculator-keys {
+  background-color: #232c43;
+  border-radius: .7rem; }
+  .calculator-keys .btn {
+    margin: 1.5rem 1.5rem 0;
+    border-radius: .7rem;
+    border: none;
+    transition: all .2s; }
+    .calculator-keys .btn__style-1 {
+      height: 4.5rem;
+      width: 8rem; }
+    .calculator-keys .btn__style-2 {
+      height: 4.5rem;
+      width: 19rem;
+      margin-bottom: 2rem; }
+    .calculator-keys .btn__font {
+      font-family: 'Spartan', sans-serif; }
+      .calculator-keys .btn__font-lg {
+        font-size: 2.8rem;
+        color: #232c43;
+        font-weight: bold; }
+      .calculator-keys .btn__font-sm {
+        font-size: 1.5rem;
+        color: white; }
+    .calculator-keys .btn__color-1 {
+      background-color: #e5e4e1;
+      border-bottom: 3px solid #a69d91; }
+    .calculator-keys .btn__color-2 {
+      background-color: #637097;
+      border-bottom: 3px solid #404e72; }
+    .calculator-keys .btn__color-3 {
+      background-color: #d03f2f;
+      border-bottom: 3px solid #93261a; }
+    .calculator-keys .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+    .calculator-keys .btn:active {
+      transform: translateY(0px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+
+.radio__group {
+  display: inline-block; }
+
+.radio__input {
+  display: none; }
+
+.radio__label {
+  position: relative; }
+
+.radio__button {
+  cursor: pointer;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #d03f2f;
+  transition: opacity .1s;
+  margin: 3px 6px 0 -3px;
+  opacity: 0; }
+
+.radio__background {
+  height: 1.8rem;
+  width: 5.6rem;
+  background-color: #232c43;
+  border-radius: 20% / 60%;
+  position: absolute;
+  top: 76%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  z-index: -10; }
+
+.radio__no {
+  color: white;
+  margin-bottom: .5rem; }
+
+.radio__input:checked ~ .radio__label .radio__button {
+  opacity: 1; }
+
+.heading-primary {
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.3rem;
+  margin-top: 1rem; }
+
+.heading-secondary {
+  display: inline-block;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.3rem; }
+
+.calculator-screen {
+  width: 100%;
+  height: 9rem;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background-color: #182034;
+  border: none;
+  border-radius: .7rem; }
+  .calculator-screen:focus {
+    border: none;
+    outline: none; }
+  .calculator-screen[type='text'] {
+    font-size: 4rem;
+    text-align: right;
+    color: white; }
+
+.header::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.header .logo {
+  float: left; }
+
+.header .radio {
+  float: right; }
+
+.row {
+  width: 100%;
+  margin: 0 auto; }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      width: 100%;
+      padding: 0 3rem; } }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .row [class^="col-"] {
+    float: left; }
+  .row .col-1-of-2 {
+    width: 50%; }
+  .row .col-1-of-4 {
+    width: 25%; }
+
+.footer {
+  position: absolute;
+  top: 95%;
+  left: 60%;
+  transform: translate(-95%, -60%); }
+  .footer .attribution {
+    padding: 1rem 0 4rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(15, 15, 15, 0.623); }
+    .footer .attribution_link:link, .footer .attribution_link:visited {
+      background-image: linear-gradient(to right, Blue, Indigo, Violet);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-decoration: none;
+      display: inline-block;
+      transition: all .2s; }
+    .footer .attribution_link:hover, .footer .attribution_link:active {
+      background-image: linear-gradient(to right, Blue, Indigo, Violet);
+      -webkit-background-clip: text;
+      color: transparent;
+      transform: rotate(5deg) scale(1.3); }

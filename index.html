@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+
+  <body>
+    <div class="calculator-app">
+      <header class="header">
+        <div class="logo">
+          <h1 class="heading-primary">calc</h1>
+        </div>
+
+        <div class="radio">
+          <h2 class="heading-secondary">Theme</h2>
+
+          <div class="radio__group">
+            <input
+              type="radio"
+              class="radio__input"
+              id="blue"
+              name="theme"
+              checked="checked"
+            />
+            <label for="blue" class="radio__label">
+              <h3 class="radio__no">1</h3>
+              <span class="radio__button"></span>
+            </label>
+          </div>
+
+          <div class="radio__group">
+            <input type="radio" class="radio__input" id="white" name="theme" />
+            <label for="white" class="radio__label">
+              <h3 class="radio__no">2</h3>
+              <span class="radio__button"></span>
+              <span class="radio__background"></span>
+            </label>
+          </div>
+
+          <div class="radio__group">
+            <input type="radio" class="radio__input" id="purple" name="theme" />
+            <label for="purple" class="radio__label">
+              <h3 class="radio__no">3</h3>
+              <span class="radio__button"></span>
+            </label>
+          </div>
+        </div>
+      </header>
+
+      <div class="calculator">
+        <input type="text" class="calculator-screen" value="" />
+      </div>
+
+      <div class="calculator-keys">
+        <div class="row">
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="7"
+            >
+              7
+            </button>
+          </div>
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="8"
+            >
+              8
+            </button>
+          </div>
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="9"
+            >
+              9
+            </button>
+          </div>
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-2 btn__font-sm"
+              value="DEL"
+            >
+              DEL
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="4"
+            >
+              4
+            </button>
+          </div>
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="5"
+            >
+              5
+            </button>
+          </div>
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="6"
+            >
+              6
+            </button>
+          </div>
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="+"
+            >
+              +
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="1"
+            >
+              1
+            </button>
+          </div>
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="2"
+            >
+              2
+            </button>
+          </div>
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="3"
+            >
+              3
+            </button>
+          </div>
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="-"
+            >
+              -
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="."
+            >
+              .
+            </button>
+          </div>
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="0"
+            >
+              0
+            </button>
+          </div>
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="/"
+            >
+              /
+            </button>
+          </div>
+          <div class="col-1-of-4">
+            <button
+              type="button"
+              class="btn btn__style-1 btn__color-1 btn__font-lg"
+              value="*"
+            >
+              x
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <button
+              type="button"
+              class="btn btn__style-2 btn__color-2 btn__font-sm"
+              value="rest"
+            >
+              REST
+            </button>
+          </div>
+          <div class="col-1-of-2">
+            <button
+              type="button"
+              class="btn btn__style-2 btn__color-3 btn__font-sm"
+              value="="
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript/calculator.js" charset="utf-8"></script>
+  </body>
+
+  <!-- <footer class="footer">
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="attribution_link">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/LujainSaad" class="attribution_link">Lujain Saad</a>.
+  </div>
+</footer> -->
+</html>

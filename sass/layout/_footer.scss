@@ -1,0 +1,36 @@
+.footer {
+    position: absolute;
+    top: 95%;
+    left: 60%;
+    transform: translate(-95%, -60%);
+
+    .attribution {
+        padding: 1rem 0 4rem;
+        text-align: center;
+        font-size: 1.2rem;
+        color: rgba(15, 15, 15, 0.623);
+
+        &_link {
+
+            &:link,
+            &:visited {
+
+                background-image: linear-gradient(to right, Blue, Indigo , Violet);
+                -webkit-background-clip: text;
+                color: transparent;
+                text-decoration: none;
+                display: inline-block;
+                transition: all .2s;
+            }
+
+            &:hover,
+            &:active {
+                background-image: linear-gradient(to right, Blue, Indigo , Violet);
+                -webkit-background-clip: text;
+                color: transparent;
+                transform: rotate(5deg) scale(1.3);
+            }
+
+        }
+    }
+}
