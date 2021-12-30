@@ -19,7 +19,7 @@
     display: inline-block;
     background-color: $red;
     transition: opacity 0.1s;
-    margin: 11px 6px 0 -3px;
+    margin: 3px 6px 0 -3px;
     opacity: 0;
   }
 
@@ -32,6 +32,7 @@
     top: 76%;
     left: 28%;
     transform: translate(-50%, -50%);
+    margin: -6px -3px 10px;
     z-index: -10;
   }
 
