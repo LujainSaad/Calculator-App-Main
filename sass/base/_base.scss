@@ -1,31 +1,35 @@
 *,
 ::after,
 ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%; // 10/16 = 0.625 👉 62.5% 
-    overflow-x: hidden;
+  font-size: 62.5%; // 10/16 = 0.625 👉 62.5%
+  overflow-x: hidden;
 }
 
 body {
-    box-sizing: border-box; //heightxwidth = contant+margin+padding+border
-    overflow-x: hidden; //to fix white space on right side of body on small viewports    
-    background-color: $very_dark_desaturated_blue1;
-    font-family: 'Spartan', sans-serif;
+  box-sizing: border-box; //heightxwidth = contant+margin+padding+border
+  overflow-x: hidden; //to fix white space on right side of body on small viewports
+  background-color: $very_dark_desaturated_blue1;
+  font-family: "Spartan", sans-serif;
 
-    #white:checked {
-        background-color: white;
-    }
+  #white:checked {
+    background-color: white;
+  }
 }
 
 .calculator-app {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 44rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44rem;
+
+  @include respond(phone) {
+    width: 30rem;
+  }
 }

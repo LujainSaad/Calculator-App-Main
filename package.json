@@ -8,7 +8,7 @@
   },
   "author": "Lujain Saad",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^6.0.1"
+  "dependencies": {
+    "node-sass": "^7.0.1"
   }
 }

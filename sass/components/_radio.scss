@@ -1,66 +1,61 @@
 .radio {
-
-    &__group {
-        display: inline-block;
-
-    }
-
-    &__input {
-        display: none;
-
-    }
-
-    &__label {
-        position: relative;
-    }
-
-    &__button {
-        cursor: pointer;
-        height: 1.2rem;
-        width: 1.2rem;
-        border-radius: 50%;
-        display: inline-block;
-        background-color: $red;
-        transition: opacity .1s;
-        margin: 3px 6px 0 -3px;
-        opacity: 0;
-
-
-    }
-
-    &__background {
-        height: 1.8rem;
-        width: 5.6rem;
-        background-color: $very_dark_desaturated_blue2;
-        border-radius: 20% / 60%;
-        position: absolute;
-        top: 76%;
-        left: 28%;
-        transform: translate(-50%, -50%);
-        z-index: -10;
-    }
-
-    &__no {
-        color: white;
-        margin-bottom: .5rem;
-    }
-
-    &__input:checked~&__label &__button {
-        opacity: 1;
-    }
-}
-
-.heading-primary{
-    text-transform: uppercase;
-    color: white;
-    font-size: 2.3rem;
-    margin-top: 1rem;
-}
-
-.heading-secondary{
+  &__group {
     display: inline-block;
-    margin-right: 2rem;
-    text-transform: uppercase;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    position: relative;
+  }
+
+  &__button {
+    cursor: pointer;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: $red;
+    transition: opacity 0.1s;
+    margin: 3px 6px 0 -3px;
+    opacity: 0;
+  }
+
+  &__background {
+    height: 1.8rem;
+    width: 5.6rem;
+    background-color: $very_dark_desaturated_blue2;
+    border-radius: 20% / 60%;
+    position: absolute;
+    top: 76%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+  }
+
+  &__no {
     color: white;
-    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__input:checked ~ &__label &__button {
+    opacity: 1;
+  }
+}
+
+.heading-primary {
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.3rem;
+  margin-top: 1rem;
+}
+
+.heading-secondary {
+  display: inline-block;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.3rem;
 }

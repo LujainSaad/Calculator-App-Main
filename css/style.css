@@ -30,7 +30,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: #3a4764;
-  font-family: 'Spartan', sans-serif; }
+  font-family: "Spartan", sans-serif; }
   body #white:checked {
     background-color: white; }
 
@@ -40,24 +40,35 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 44rem; }
+  @media only screen and (max-width: 37.5em) {
+    .calculator-app {
+      width: 30rem; } }
 
 .calculator-keys {
   background-color: #232c43;
-  border-radius: .7rem; }
+  border-radius: 0.7rem; }
   .calculator-keys .btn {
     margin: 1.5rem 1.5rem 0;
-    border-radius: .7rem;
+    border-radius: 0.7rem;
     border: none;
-    transition: all .2s; }
+    transition: all 0.2s; }
     .calculator-keys .btn__style-1 {
       height: 4.5rem;
       width: 8rem; }
+      @media only screen and (max-width: 37.5em) {
+        .calculator-keys .btn__style-1 {
+          height: 4.5rem;
+          width: 5rem; } }
     .calculator-keys .btn__style-2 {
       height: 4.5rem;
       width: 19rem;
       margin-bottom: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .calculator-keys .btn__style-2 {
+          height: 4.5rem;
+          width: 11rem; } }
     .calculator-keys .btn__font {
-      font-family: 'Spartan', sans-serif; }
+      font-family: "Spartan", sans-serif; }
       .calculator-keys .btn__font-lg {
         font-size: 2.8rem;
         color: #232c43;
@@ -97,7 +108,7 @@ body {
   border-radius: 50%;
   display: inline-block;
   background-color: #d03f2f;
-  transition: opacity .1s;
+  transition: opacity 0.1s;
   margin: 3px 6px 0 -3px;
   opacity: 0; }
 
@@ -114,7 +125,7 @@ body {
 
 .radio__no {
   color: white;
-  margin-bottom: .5rem; }
+  margin-bottom: 0.5rem; }
 
 .radio__input:checked ~ .radio__label .radio__button {
   opacity: 1; }
@@ -139,11 +150,11 @@ body {
   padding: 1rem 2rem;
   background-color: #182034;
   border: none;
-  border-radius: .7rem; }
+  border-radius: 0.7rem; }
   .calculator-screen:focus {
     border: none;
     outline: none; }
-  .calculator-screen[type='text'] {
+  .calculator-screen[type="text"] {
     font-size: 4rem;
     text-align: right;
     color: white; }
@@ -162,10 +173,10 @@ body {
 .row {
   width: 100%;
   margin: 0 auto; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     .row {
       width: 100%;
-      padding: 0 3rem; } }
+      padding: 0 2rem; } }
   .row::after {
     content: "";
     clear: both;

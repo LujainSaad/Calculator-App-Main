@@ -2,9 +2,9 @@
   width: 100%; //maximum width is 1140px if there was enogh spaice or what sutes the broweser
   margin: 0 auto; //center a block inside a block
 
-  @include respond(tab-port) {
+  @include respond(phone) {
     width: 100%;
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 
   @include clearfix;
